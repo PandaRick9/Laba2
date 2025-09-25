@@ -1,7 +1,10 @@
 public class Calculator {
 
     public int add(int a, int b) {
-        return a + b;
+        System.out.println("Adding: " + a + " + " + b);
+        int result = a + b;
+        System.out.println("Result: " + result);
+        return result;
     }
 
     public int subtract(int a, int b) {
