@@ -7,6 +7,7 @@ public class ArraySorted {
         System.out.println("Original array:");
         printArray(array);
         System.out.println();
+
     }
 
     public static void printArray(int[] arr) {
