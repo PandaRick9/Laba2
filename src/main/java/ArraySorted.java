@@ -9,6 +9,7 @@ public class ArraySorted {
         printArray(array);
         System.out.println();
         bubbleSort(array);
+        System.out.println("It's my life");
 
     }
     public static void bubbleSort(int[] arr) {
