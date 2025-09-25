@@ -6,7 +6,6 @@ public class ArraySorted {
         System.out.println("Original array:");
         printArray(array);
     }
-
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -20,9 +19,7 @@ public class ArraySorted {
         }
     }
     public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        for (int j : arr) { System.out.print(j + " "); }
         System.out.println();
     }
 }
