@@ -1,13 +1,14 @@
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.nio.charset.StandardCharsets;public class HelloWorld {
+import java.util.Scanner;
+
+public class HelloWorld {
     public static void main(String[] args) {
-        String text = "Hi!, Hello Vitaly!";
-        try (OutputStreamWriter writer = new OutputStreamWriter(System.out, StandardCharsets.UTF_8)) {
-            writer.write(text);
-            writer.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        System.out.println("User Input Application");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+
+        scanner.close();
     }
 }
